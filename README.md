@@ -35,9 +35,9 @@ In this script I'm trying to built another logic based on checking attributes vi
 
 I hereby make the following assumptions:
 
-Local end user accounts most likely have the dsAttrTypeNative:_writers_passwd attribute
-System/service account do not have the dsAttrTypeNative:_writers_passwd
-End user accounts have a NFSHomeDirectory attribute which is not "/var/empty"
+=> Local end user accounts most likely have the dsAttrTypeNative:_writers_passwd attribute
+=> System/service account do not have the dsAttrTypeNative:_writers_passwd
+=> End user accounts have a NFSHomeDirectory attribute which is not "/var/empty"
 
 I'm assuming that processing the 3 criteria above, after querying the system with ‘dscl’, gives me only local accounts created by the end user (or mobile accounts).
 
