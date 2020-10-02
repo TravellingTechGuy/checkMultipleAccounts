@@ -112,7 +112,7 @@ echo "Number of accounts: ${#localAccounts[@]}"
 echo " "
 echo "Executing Jamf Pro Custom Trigger"
 
-#jamf policy -event $customTrigger
+jamf policy -event $customTrigger
 
 else
 	
